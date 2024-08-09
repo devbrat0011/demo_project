@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Navigation from './routes/routes';
+import { AuthProvider } from './routes/privateRoute';
+import IdleTimerContainer from './component/common/idleTimerContainer';
+import FileUpload from './component/fileUpload/fileUpload';
+import { CakeView } from './app/features/cake/CakeView';
+import { IcecreamView } from './app/features/icecream/IcecreamView';
+import { UserView } from './app/features/user/UserView';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <AuthProvider>
+        <IdleTimerContainer></IdleTimerContainer>
+        <Navigation />
+      </AuthProvider> 
+
+      {/* <CakeView />
+      <IcecreamView />
+      <UserView /> */}
+
+      {/*<FileUpload />*/}
     </div>
   );
 }

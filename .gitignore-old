@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/.vs
+
 # testing
 /coverage
 
@@ -21,22 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/.vs/Enterprise/v16/.suo
-
-package-lock.json
-.vscode/settings.json
-UAT-Build
-QA-Build
-PROD-Build
-
-QA-Build.zip
-build.zip
-UAT-Build.zip
-PROD-Build.zip
-build-uat.zip
-UATCLIENT-Build.zip
-UATCLIENT-Build
-QACLIENT-Build.zip
-QACLIENT-Build
-PREPROD-BUILD
-
